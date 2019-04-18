@@ -1,0 +1,105 @@
+<!DOCTYPE HTML>
+<html lang="en">
+  <head>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="icon" href="https://github.com/mate-desktop/mate-icon-theme/raw/master/mate/16x16/apps/system-file-manager.png" />
+  <title>caja Code Analyzer results</title>
+</head>
+<body>
+<h1>
+  <a href="https://github.com/mate-desktop">mate-desktop</a>/<a href="https://github.com/mate-desktop/caja">caja</a> Static analyzer results
+</h1>
+  <a href="https://github.com/mate-desktop/caja" title="Github"><i class="fa fa-github fa-2x"></i>GitHub</a>
+  <a href="https://travis-ci.org/mate-desktop/caja/builds/521620687" title="Travis CI"><img src="https://travis-ci.org/mate-desktop/caja.svg?branch=master" alt="Build Status" /></a>
+<hr/>
+Commit: <a href="https://github.com/mate-desktop/caja/commit/c93d8453ecc0421fe45e6f88ed3d15163149e39c">c93d8453ecc0421fe45e6f88ed3d15163149e39c</a><br/>
+Compare: <a href="https://github.com/mate-desktop/caja/compare/2f3f26ee1051...c93d8453ecc0">2f3f26ee1051...c93d8453ecc0</a><br/>
+Branch: <a href="https://github.com/mate-desktop/caja/tree/master">master</a><br/>
+Time: 2019-04-18 09:02:20+00:00<br/>
+Messages:<br/>
+<pre>
+eel: reduce the scope of some variables
+
+Fixes 'cppcheck' warnings:
+
+[eel/eel-background.c:163]: (style) The scope of the variable 'intensity' can be reduced.
+[eel/eel-background.c:163]: (style) The scope of the variable 'saturation' can be reduced.
+[eel/eel-background.c:196]: (style) The scope of the variable 'end_color' can be reduced.
+
+[eel/eel-canvas-rect-ellipse.c:600]: (style) The scope of the variable 'tmp' can be reduced.
+[eel/eel-canvas-rect-ellipse.c:705]: (style) The scope of the variable 'width_pixels' can be reduced.
+[eel/eel-canvas-rect-ellipse.c:706]: (style) The scope of the variable 'width_lt' can be reduced.
+[eel/eel-canvas-rect-ellipse.c:706]: (style) The scope of the variable 'width_rb' can be reduced.
+
+[eel/eel-canvas.c:1420]: (style) The scope of the variable 'child' can be reduced.
+[eel/eel-canvas.c:1493]: (style) The scope of the variable 'i' can be reduced.
+[eel/eel-canvas.c:1518]: (style) The scope of the variable 'i' can be reduced.
+[eel/eel-canvas.c:1545]: (style) The scope of the variable 'i' can be reduced.
+[eel/eel-canvas.c:1599]: (style) The scope of the variable 'child' can be reduced.
+[eel/eel-canvas.c:2598]: (style) The scope of the variable 'cx' can be reduced.
+[eel/eel-canvas.c:2598]: (style) The scope of the variable 'cy' can be reduced.
+
+[eel/eel-debug.c:80]: (style) The scope of the variable 'f' can be reduced.
+
+[eel/eel-editable-label.c:1493]: (style) The scope of the variable 'clip' can be reduced.
+[eel/eel-editable-label.c:1571]: (style) The scope of the variable 'text' can be reduced.
+[eel/eel-editable-label.c:2270]: (style) The scope of the variable 'anchor' can be reduced.
+[eel/eel-editable-label.c:2270]: (style) The scope of the variable 'end' can be reduced.
+[eel/eel-editable-label.c:3054]: (style) The scope of the variable 'menuitem' can be reduced.
+[eel/eel-editable-label.c:3400]: (style) The scope of the variable 'index' can be reduced.
+
+[eel/eel-gdk-pixbuf-extensions.c:85]: (style) The scope of the variable 'scale' can be reduced.
+[eel/eel-gdk-pixbuf-extensions.c:283]: (style) The scope of the variable 's_x1' can be reduced.
+[eel/eel-gdk-pixbuf-extensions.c:283]: (style) The scope of the variable 's_y2' can be reduced.
+[eel/eel-gdk-pixbuf-extensions.c:284]: (style) The scope of the variable 's_xfrac' can be reduced.
+
+[eel/eel-glib-extensions.c:439]: (style) The scope of the variable 'compare_result' can be reduced.
+[eel/eel-glib-extensions.c:561]: (style) The scope of the variable 'hash_table_to_free' can be reduced.
+
+[eel/eel-graphic-effects.c:74]: (style) The scope of the variable 'pixsrc' can be reduced.
+[eel/eel-graphic-effects.c:74]: (style) The scope of the variable 'pixdest' can be reduced.
+[eel/eel-graphic-effects.c:137]: (style) The scope of the variable 'pixsrc' can be reduced.
+[eel/eel-graphic-effects.c:137]: (style) The scope of the variable 'pixdest' can be reduced.
+[eel/eel-graphic-effects.c:195]: (style) The scope of the variable 'pixsrc' can be reduced.
+[eel/eel-graphic-effects.c:196]: (style) The scope of the variable 'pixdest' can be reduced.
+[eel/eel-graphic-effects.c:245]: (style) The scope of the variable 'slab_width' can be reduced.
+[eel/eel-graphic-effects.c:262]: (style) The scope of the variable 'slab_height' can be reduced.
+[eel/eel-graphic-effects.c:282]: (style) The scope of the variable 'y' can be reduced.
+
+[eel/eel-gtk-extensions.c:165]: (style) The scope of the variable 'screen' can be reduced.
+[eel/eel-gtk-extensions.c:167]: (style) The scope of the variable 'screen_width' can be reduced.
+[eel/eel-gtk-extensions.c:167]: (style) The scope of the variable 'screen_height' can be reduced.
+[eel/eel-gtk-extensions.c:168]: (style) The scope of the variable 'scale' can be reduced.
+
+[eel/eel-labeled-image.c:1051]: (style) The scope of the variable 'x_alignment' can be reduced.
+[eel/eel-labeled-image.c:1052]: (style) The scope of the variable 'y_alignment' can be reduced.
+[eel/eel-labeled-image.c:1100]: (style) The scope of the variable 'x_alignment' can be reduced.
+[eel/eel-labeled-image.c:1101]: (style) The scope of the variable 'y_alignment' can be reduced.
+
+[eel/eel-mate-extensions.c:73]: (style) The scope of the variable 'quoted' can be reduced.
+
+[eel/eel-stock-dialogs.c:409]: (style) The scope of the variable 'button_title' can be reduced.
+
+[eel/eel-string.c:415]: (style) The scope of the variable 'i' can be reduced.
+[eel/eel-string.c:542]: (style) The scope of the variable 'type' can be reduced.
+
+[eel/eel-vfs-extensions.c:65]: (style) The scope of the variable 'valid_bytes' can be reduced.
+
+[eel/eel-wrap-table.c:766]: (style) The scope of the variable 'hadj' can be reduced.
+[eel/eel-wrap-table.c:766]: (style) The scope of the variable 'vadj' can be reduced.
+</pre>
+<hr/>
+<ul>
+<li><a href=2019-04-18-085341-7219-1@c93d8453ecc0_master>2019-04-18-085341-7219-1@c93d8453ecc0_master</a></li>
+<li><a href=2019-04-17-170717-7221-1@2f17ed5bc079_cppcheck_eel_reduce-scopes>2019-04-17-170717-7221-1@2f17ed5bc079_cppcheck_eel_reduce-scopes</a></li>
+<li><a href=2019-04-17-001439-7223-1@2f3f26ee1051_master>2019-04-17-001439-7223-1@2f3f26ee1051_master</a></li>
+<li><a href=2019-04-16-231354-7222-1@c51bf9fd6944_cppcheck_debian>2019-04-16-231354-7222-1@c51bf9fd6944_cppcheck_debian</a></li>
+<li><a href=2019-04-16-181841-7226-1@89d42dba050d_pragma-once>2019-04-16-181841-7226-1@89d42dba050d_pragma-once</a></li>
+<li><a href=2019-04-16-144218-7220-1@238abcc94644_master>2019-04-16-144218-7220-1@238abcc94644_master</a></li>
+<li><a href=2019-04-16-140807-7222-1@8e8b2e11789f_desktop-files>2019-04-16-140807-7222-1@8e8b2e11789f_desktop-files</a></li>
+<li><a href=2019-04-16-105953-7223-1@46e73ec24b89_v1.23.0>2019-04-16-105953-7223-1@46e73ec24b89_v1.23.0</a></li>
+<li><a href=2019-04-16-104542-7223-1@46e73ec24b89_master>2019-04-16-104542-7223-1@46e73ec24b89_master</a></li>
+<li><a href=2019-04-16-005355-7216-1@debc8612d23b_cajafile_gstrfreev>2019-04-16-005355-7216-1@debc8612d23b_cajafile_gstrfreev</a></li>
+</ul>
+</body>
+</html>
